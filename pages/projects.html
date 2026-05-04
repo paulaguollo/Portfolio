@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="../assets/css/main.css">
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
+<button onclick="toggleDark()" class="btn btn-sm btn-dark">🌙</button>
 
 <body class="bg-project">
 
@@ -36,17 +37,15 @@
   <main class="main">
 
     <!-- Projects -->
-    <section id="aboutProject">
-      <div class="ecodoa">
-        <img src="../assets/img/projects/ecodoa.svg" alt="Ecodoa project">
-      </div>
-      <div class="planta">
-        <img src="../assets/img/projects/planta.svg" alt="Planta project">
-      </div>
-      <div class="pomofy">
-        <img src="../assets/img/projects/pomofy.svg" alt="Pomofy project">
-      </div>
-    </section>
+     <div class="container mt-5">
+  <div class="row" id="projects-list"></div>
+</div>
+
+<div class="container mt-4">
+  <button class="btn btn-dark" onclick="filterProjects('All')">All</button>
+  <button class="btn btn-dark" onclick="filterProjects('Sustainability')">Sustainability</button>
+  <button class="btn btn-dark" onclick="filterProjects('Productivity')">Productivity</button>
+</div>
 
   </main>
 

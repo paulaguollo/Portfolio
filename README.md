@@ -1,10 +1,21 @@
-# Portfolio
-My Porftolio april-2026
+# Paula Guollo Portfolio
 
-Develop a website using HTML, CSS, JavaScript, and Bootstrap. Consolidate learning from the front-end development course from CESAE software Developer
+## Tema
+Portfólio pessoal com foco em sustentabilidade, economia e tecnologia
 
-• Nome do projeto 
-• Tema escolhido 
-• Tecnologias utilizadas 
-• Funcionalidades principais 
-• Eventuais limitações ou ideias futuras
+## Tecnologias
+- HTML
+- CSS
+- Bootstrap
+- JavaScript
+
+## Funcionalidades
+- Lista dinâmica de projetos
+- Filtro por categoria
+- Validação de formulário
+- Dark mode
+
+## Melhorias futuras
+- Backend integration
+- Base de dados
+- Login system

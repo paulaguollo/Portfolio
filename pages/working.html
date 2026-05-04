@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="../assets/css/main.css">
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
+<button onclick="toggleDark()" class="btn btn-sm btn-dark">🌙</button>
 
 <body class="bg-experience">
 
@@ -35,77 +36,107 @@
 
   <main class="main">
 
-    <!-- Working Experience -->
-    <section class="working">
-      <h1>Experience</h1>
+  <section class="working container mt-5">
+  <h1 class="mb-4">Experience</h1>
 
-      <!-- Career Break -->
-      <div class="working-item">
-        <div class="working-header">
-          <h3>Career Break — Sabbatical &amp; Professional Transition</h3>
-          <span>Jul 2024 – Jun 2025</span>
+  <div class="accordion" id="experienceAccordion">
+
+    <!-- Career Break -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#exp1">
+          Career Break — Sabbatical & Professional Transition
+        </button>
+      </h2>
+      <div id="exp1" class="accordion-collapse collapse show">
+        <div class="accordion-body">
+          <p><strong>Jul 2024 – Jun 2025 | International</strong></p>
+          <ul>
+            <li>Career repositioning in economics, sustainability, and technology</li>
+            <li>International exposure across 20+ countries</li>
+            <li>Improved cross-cultural adaptability and English</li>
+          </ul>
         </div>
-        <div class="working-subtitle">International</div>
-        <ul>
-          <li>Dedicated to career repositioning at the intersection of economics, sustainability, and technology.</li>
-          <li>Gained international exposure across 20+ countries, strengthening cross-cultural adaptability and English communication.</li>
-        </ul>
       </div>
+    </div>
 
-      <!-- Research Assistant -->
-      <div class="working-item">
-        <div class="working-header">
-          <h3>Research Assistant</h3>
-          <span>2019 – 2022</span>
+    <!-- Research Assistant -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#exp2">
+          Research Assistant
+        </button>
+      </h2>
+      <div id="exp2" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <p><strong>2019 – 2022 | Brazil</strong></p>
+          <ul>
+            <li>Regional plans impacting 500k+ residents</li>
+            <li>Economic analysis and policy support</li>
+            <li>Academic presentations and publications</li>
+          </ul>
         </div>
-        <div class="working-subtitle">Socioeconomic Development and Innovation Observatory · Brazil</div>
-        <ul>
-          <li>Developed regional socioeconomic plans adopted by 25+ cities, impacting over 500k residents.</li>
-          <li>Produced economic analyses and technical reports to support evidence-based policy decisions.</li>
-          <li>Presented research at 10+ academic events and contributed to publications.</li>
-        </ul>
       </div>
+    </div>
 
-      <!-- Administrative & Tax Assistant -->
-      <div class="working-item">
-        <div class="working-header">
-          <h3>Administrative &amp; Tax Assistant</h3>
-          <span>2019 – 2022</span>
+    <!-- Administrative -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#exp3">
+          Administrative & Tax Assistant
+        </button>
+      </h2>
+      <div id="exp3" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <p><strong>2019 – 2022 | Brazil</strong></p>
+          <ul>
+            <li>Dashboard creation for management visibility</li>
+            <li>Process optimization through data analysis</li>
+            <li>Improved documentation systems</li>
+          </ul>
         </div>
-        <div class="working-subtitle">Confecção NJJ · Brazil</div>
-        <ul>
-          <li>Designed dashboards and reports providing real-time operational visibility for management.</li>
-          <li>Identified process inefficiencies through data analysis, improving administrative workflows.</li>
-          <li>Restructured documentation systems, reducing retrieval time and improving compliance tracking.</li>
-        </ul>
       </div>
+    </div>
 
-      <!-- Logistics -->
-      <div class="working-item">
-        <div class="working-header">
-          <h3>Logistics &amp; Production Planning Assistant</h3>
-          <span>2019 – 2020</span>
+    <!-- Logistics -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#exp4">
+          Logistics & Production Planning Assistant
+        </button>
+      </h2>
+      <div id="exp4" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <p><strong>2019 – 2020 | Mohawk Industries</strong></p>
+          <ul>
+            <li>Managed 250+ monthly orders</li>
+            <li>Created KPI reports for supply chain</li>
+          </ul>
         </div>
-        <div class="working-subtitle">Mohawk Industries · Brazil</div>
-        <ul>
-          <li>Planned and monitored production schedules ensuring on-time delivery for 250+ monthly orders.</li>
-          <li>Developed KPI reports for supply chain performance, enabling faster bottleneck identification.</li>
-        </ul>
       </div>
+    </div>
 
-      <!-- Illustration -->
-      <div class="experience">
-        <img src="../assets/img/experience.svg" alt="Experience illustration">
-      </div>
+  </div>
 
-      <!-- Company logos -->
-      <div class="icon-experiencias">
-        <a href="https://gecomd.net" target="_blank"><img src="../assets/img/gecomd.svg" alt="GECOMD"></a>
-        <a href="http://observatorio.unesc.net/home" target="_blank"><img src="../assets/img/unesc.svg" alt="OBDESI"></a>
-        <a href="https://mohawk.gupy.io" target="_blank"><img src="../assets/img/mohaki.svg" alt="MOHAWK"></a>
-      </div>
+  <!-- Illustration -->
+  <div class="text-center mt-5">
+    <img src="../assets/img/experience.svg" class="img-fluid" style="max-width: 400px;">
+  </div>
 
-    </section>
+  <!-- Logos -->
+  <div class="d-flex justify-content-center gap-4 mt-4 flex-wrap">
+    <a href="https://gecomd.net" target="_blank">
+      <img src="../assets/img/gecomd.svg" style="height:40px;">
+    </a>
+    <a href="http://observatorio.unesc.net/home" target="_blank">
+      <img src="../assets/img/unesc.svg" style="height:40px;">
+    </a>
+    <a href="https://mohawk.gupy.io" target="_blank">
+      <img src="../assets/img/mohaki.svg" style="height:40px;">
+    </a>
+  </div>
+
+</section>
 
   </main>
 
