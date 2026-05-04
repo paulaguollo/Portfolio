@@ -12,6 +12,34 @@
   align-items: center;
 }
 
+.bg-about,
+.bg-contact {
+  background-image: url("../img/bg/bg-green-right-down.png");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  align-items: center;
+}
+
+
+.bg-experience,
+.bg-skill {
+  background-image: url("../img/bg/bg-green-right-up.png");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  align-items: center;
+}
+
+
+.bg-project {
+  background-image: url("../img/bg/bg-purple.png");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  align-items: center;
+}
+
 section {
   height: 100vh;
   padding: 60px 20px;
