@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg-index {
+  background-image: url("../img/bg/bg-hero.png");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  align-items: center;
+}
+
+section {
+  height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  scroll-snap-align: start;
+}
+
+
